@@ -11,7 +11,7 @@ Rpg progamação:
 //Dados do jogador
 typedef struct jogador{
 	
-	//status bÃ¡sico
+	//status básico
 	char nome[50];
 	int pv;
 	int forca;
@@ -55,7 +55,7 @@ typedef struct oponente{
 
 Oponente oponente;
 
-//funÃ§ao cadastro oponente
+//funçao cadastro oponente
 void CadastroOponente(){
 	
 	//nivel 1
@@ -78,7 +78,7 @@ void CadastroOponente(){
     
 }
 
-//FunÃ§Ã£o linha de asterisco
+//Função linha de asterisco
 char Linha()
 {
 	int k;
@@ -86,7 +86,7 @@ char Linha()
 		printf("*");
 }
 
-//funÃ§Ã£o historia
+//função historia
 void Historia()
 {
 	setlocale(LC_ALL, "Portuguese");
@@ -95,10 +95,10 @@ void Historia()
 	
 	Linha();
 	
-	printf("\n\t* HistÃ³ria *\n");
+	printf("\n\t* História *\n");
 	
 
-	printf("HistÃ³ria de Mundo: O fluxo do espaÃ§o-tempo se desestabilizou apÃ³s uma entidade multiversal surgir em um universo pacato. Com o choque de vÃ¡rias dimensÃµes e realidades, um enorme labirinto foi formado contendo 6 seres de universos distintos. Cabe a vocÃª, o sÃ©timo sobrevivente tentar escapar enquanto enfrenta temÃ­veis oponentes.\n\n ");
+	printf("História de Mundo: O fluxo do espaço-tempo se desestabilizou após uma entidade multiversal surgir em um universo pacato. Com o choque de várias dimensões e realidades, um enorme labirinto foi formado contendo 6 seres de universos distintos. Cabe a você, o sétimo sobrevivente tentar escapar enquanto enfrenta temíveis oponentes.\n\n ");
 
     printf("\n");
 }
@@ -106,7 +106,7 @@ void Historia()
 
      
 
-//funÃ§Ã£o arma
+//função arma
 void Equipamentos(){
 	setlocale(LC_ALL, "Portuguese");
 
@@ -181,7 +181,7 @@ void Equipamentos(){
 	}
 	
 }
-//FunÃ§Ã£o Cadastro do jogador
+//Função Cadastro do jogador
 void Cadastrojogador(){
 	
 	system("cls");
@@ -227,7 +227,7 @@ void Cadastrojogador(){
     
 }
 
-//funÃ§ao menu
+//funçao menu
 void menu() {
 	int escolha;
 	
@@ -245,11 +245,11 @@ void menu() {
    
 }
 
-//funÃ§Ã£o level up
+//função level up
 
 void Nivel(){
 	
-	printf("Parabens! voce completou o desefio e subiu de nÃ­vel!\n");
+	printf("Parabens! voce completou o desefio e subiu de nível!\n");
 	
 	jogador.nivel= jogador.nivel+1;
 	
@@ -278,19 +278,19 @@ void EscolhaOponente1(){
 		case 'a' :
 		case 'A' :
 			
-			printf("Lich: Morto-vivo que as histÃ³rias dizem jÃ¡ ter sido um grande mago de um sÃ©culo perdido. Hoje, Ã© apenas um amontoado de ossos e carne ambulante amaldiÃ§oado com a morte eterna.\n\n");
+			printf("Lich: Morto-vivo que as histórias dizem já ter sido um grande mago de um século perdido. Hoje, é apenas um amontoado de ossos e carne ambulante amaldiçoado com a morte eterna.\n\n");
 			break;
 			
 		case 'b' :
 		case 'B' :
 			
-			printf("Skulltula: Uma das infames crias de Laracna, esta aranha monstruosa tem um enorme desejo por crÃ¢nios humanos para servir de sua toca. PorÃ©m Ã© bastante comum vÃª-la com crÃ¢nios infantis.\n\n");
+			printf("Skulltula: Uma das infames crias de Laracna, esta aranha monstruosa tem um enorme desejo por crânios humanos para servir de sua toca. Porém é bastante comum vê-la com crânios infantis.\n\n");
 			break;
 			
 		case 'c' :
 		case 'C' :
 			
-			printf("Orc: Uma besta humanoide sanguinÃ¡ria aos serviÃ§os de um senhor do escuro, desprovida de humanidade e empatia, vivendo apenas para saciar sua sede de sangue e servir ao seu mestre.\n\n");
+			printf("Orc: Uma besta humanoide sanguinária aos serviços de um senhor do escuro, desprovida de humanidade e empatia, vivendo apenas para saciar sua sede de sangue e servir ao seu mestre.\n\n");
 		
 	}
 }
@@ -313,13 +313,13 @@ void EscolhaOponente2(){
 		case 'a' :
 		case 'A' :
 			
-			printf("Grifo: Uma Quimera de um mundo distante vivendo como um enorme abutre em busca de carne fresca ou restos, dizem que seu grito Ã© tÃ£o devastador que pode implodir os tÃ­mpanos de seus inimigos.\n\n");
+			printf("Grifo: Uma Quimera de um mundo distante vivendo como um enorme abutre em busca de carne fresca ou restos, dizem que seu grito é tão devastador que pode implodir os tímpanos de seus inimigos.\n\n");
 			break;
 			
 		case 'b' :
 		case 'B' :
 			
-			printf("Manticora: Uma parente prÃ³xima do Grifo, porÃ©m muito mais agressiva que seu primo distante. Com seu veneno em sua peÃ§onhenta cauda de escorpiÃ£o, ela paralisa suas vÃ­timas e as devora ainda vivas. \n\n");
+			printf("Manticora: Uma parente próxima do Grifo, porém muito mais agressiva que seu primo distante. Com seu veneno em sua peçonhenta cauda de escorpião, ela paralisa suas vítimas e as devora ainda vivas. \n\n");
 		    break;
 		    
 		    default:
@@ -356,7 +356,7 @@ void Turno1()
 			printf("Voce comeca\n");
 			
 			//turno jogador
-			printf("0- Atacar\t1- Defender\t2- Usar PoÃ§Ã£o\n");
+			printf("0- Atacar\t1- Defender\t2- Usar Poção\n");
 			printf("ESCOLHA: ");
 			scanf("%d", &opc);
 			
@@ -386,7 +386,7 @@ void Turno1()
 				d1=rand()%6;
 				d2=rand()%6;
 				jogador.armadura=jogador.armadura+d1+d2+2;
-				printf("VocÃª defendeu!\n",d1+d2+2);
+				printf("Você defendeu!\n",d1+d2+2);
 				defender++;
 			} else 
 			{
@@ -471,7 +471,7 @@ void Turno1()
 		
 		else
 		{
-			printf("O oponente comeÃ§a\n");
+			printf("O oponente começa\n");
 			
 			//turno oponente
 			opcad= rand () %3;
@@ -518,7 +518,7 @@ void Turno1()
 			}//fim turno oponente
 			
 			//turno jogador
-			printf("0- Atacar\t1- Defender\t2- Usar PoÃ§Ã£o");
+			printf("0- Atacar\t1- Defender\t2- Usar Poção");
 			printf("ESCOLHA: ");
 			scanf("%d", &opc);
 			
@@ -548,7 +548,7 @@ void Turno1()
 				d1=rand()%6;
 				d2=rand()%6;
 				jogador.armadura=jogador.armadura+d1+d2+2;
-				printf("VocÃª defendeu!\n",d1+d2+2);
+				printf("Você defendeu!\n",d1+d2+2);
 				defender++;
 			} else 
 			{
@@ -620,7 +620,7 @@ void Turno2()
 			printf("Voce comeca\n");
 			
 			//turno jogador
-			printf("0- Atacar\t1- Defender\t2- Usar PoÃ§Ã£o\n");
+			printf("0- Atacar\t1- Defender\t2- Usar Poção\n");
 			printf("ESCOLHA: ");
 			scanf("%d", &opc);
 			
@@ -650,7 +650,7 @@ void Turno2()
 				d1=rand()%6;
 				d2=rand()%6;
 				jogador.armadura=jogador.armadura+d1+d2+2;
-				printf("VocÃª defendeu!\n",d1+d2+2);
+				printf("Você defendeu!\n",d1+d2+2);
 				defender++;
 			} else 
 			{
@@ -735,7 +735,7 @@ void Turno2()
 		
 		else
 		{
-			printf("O oponente comeÃ§a\n");
+			printf("O oponente começa\n");
 			
 			//turno oponente
 			opcad= rand () %3;
@@ -782,7 +782,7 @@ void Turno2()
 			}//fim turno oponente
 			
 			//turno jogador
-			printf("0- Atacar\t1- Defender\t2- Usar PoÃ§Ã£o");
+			printf("0- Atacar\t1- Defender\t2- Usar Poção");
 			printf("ESCOLHA: ");
 			scanf("%d", &opc);
 			
@@ -812,7 +812,7 @@ void Turno2()
 				d1=rand()%6;
 				d2=rand()%6;
 				jogador.armadura=jogador.armadura+d1+d2+2;
-				printf("VocÃª defendeu!\n",d1+d2+2);
+				printf("Você defendeu!\n",d1+d2+2);
 				defender++;
 			} else 
 			{
@@ -884,7 +884,7 @@ void Turno3()
 			printf("Voce comeca\n");
 			
 			//turno jogador
-			printf("0- Atacar\t1- Defender\t2- Usar PoÃ§Ã£o\n");
+			printf("0- Atacar\t1- Defender\t2- Usar Poção\n");
 			printf("ESCOLHA: ");
 			scanf("%d", &opc);
 			
@@ -914,7 +914,7 @@ void Turno3()
 				d1=rand()%6;
 				d2=rand()%6;
 				jogador.armadura=jogador.armadura+d1+d2+2;
-				printf("VocÃª defendeu!\n",d1+d2+2);
+				printf("Você defendeu!\n",d1+d2+2);
 				defender++;
 			} else 
 			{
@@ -999,7 +999,7 @@ void Turno3()
 		
 		else
 		{
-			printf("O oponente comeÃ§a\n");
+			printf("O oponente começa\n");
 			
 			//turno oponente
 			opcad= rand () %3;
@@ -1046,7 +1046,7 @@ void Turno3()
 			}//fim turno oponente
 			
 			//turno jogador
-			printf("0- Atacar\t1- Defender\t2- Usar PoÃ§Ã£o");
+			printf("0- Atacar\t1- Defender\t2- Usar Poção");
 			printf("ESCOLHA: ");
 			scanf("%d", &opc);
 			
@@ -1076,7 +1076,7 @@ void Turno3()
 				d1=rand()%6;
 				d2=rand()%6;
 				jogador.armadura=jogador.armadura+d1+d2+2;
-				printf("VocÃª defendeu!\n",d1+d2+2);
+				printf("Você defendeu!\n",d1+d2+2);
 				defender++;
 			} else 
 			{
